@@ -1,0 +1,6 @@
+created: 20260702124800713
+modified: 20260702125449270
+tags: 
+title: Adaptation du plugin
+
+Au lieu de simplement avoir une liste de fonts, avoir une intégration pour appliquer automatiquement la police sur différents éléments utiles du wiki (texte de base, titre h1, h2, etc., titres de la sidebar).

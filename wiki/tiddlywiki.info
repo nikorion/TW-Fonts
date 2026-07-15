@@ -1,0 +1,24 @@
+{
+    "description": "TW-Fonts development wiki",
+    "plugins": [
+        "tiddlywiki/filesystem",
+        "tiddlywiki/tiddlyweb",
+        "nikorion/fonts"
+    ],
+    "themes": [
+        "tiddlywiki/snowwhite",
+        "tiddlywiki/vanilla"
+    ],
+    "pluginPath": "../src",
+    "build": {
+        "plugin-json": [
+            "--output", "dist",
+            "--savetiddler", "$:/plugins/nikorion/fonts", "TW-Fonts-Plugin.json", "application/json"
+        ],
+        "html": [
+            "--output", "docs",
+            "--rendertiddler", "$:/core/save/all", "TW-Fonts-Wiki.html", "text/plain", "",
+            "publishFilter", "-[[$:/dev/hmr]] -[[$:/config/dev/hmr-port]] -[[$:/config/SyncFilter]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
+        ]
+    }
+}

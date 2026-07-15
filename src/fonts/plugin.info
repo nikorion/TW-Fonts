@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/nikorion/fonts",
+  "name": "Fonts",
+  "description": "Collection de polices web (webfonts) pour TiddlyWiki",
+  "author": "nikorion",
+  "source": "https://github.com/nikorion/TW-Fonts",
+  "version": "0.1.0",
+  "core-version": ">=5.2.0",
+  "type": "application/json",
+  "plugin-type": "plugin"
+}

@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build TiddlyWiki
+dist/
+
+# Session state (not meaningful content)
+wiki/tiddlers/$__StoryList.tid
+wiki/tiddlers/$__HistoryList.json
+wiki/tiddlers/$__HistoryList.json.meta
+wiki/tiddlers/$__dev-hmr-port.tid
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Notes Claude locales (perso, non versionnées)
+CLAUDE.local.md

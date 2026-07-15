@@ -1,0 +1,30 @@
+created: 20251208231630881
+modified: 20251209021133881
+tags: 
+title: Webfont Tiddler
+
+|!Title|`$:/fonts/<font_name>.css`|
+|!Tags|`$:/tags/Stylesheet`|
+|!Type|`text/css`|
+
+```css
+@font-face {
+    font-family: "<font_name>";
+	font-weight: normal;
+    font-style: normal;
+    src: url(data:application/font-woff2;charset=utf-8;base64,<<<CODE>>>);
+}
+```
+
+__Applications __: font-woff, font-woff2, font-ttf, font-otf, etc.
+
+!!Fonts Sources
+
+*[[dafont.com|https://www.dafont.com/fr/]]
+*[[fontlibrary.org|https://fontlibrary.org/]]
+*[[fontsquirrel.com|https://www.fontsquirrel.com/]]
+
+!!Base-64 Converters
+
+*[[giftofspeed.com|https://www.giftofspeed.com/base64-encoder/]]
+*[[transfonter.org|https://transfonter.org/]]

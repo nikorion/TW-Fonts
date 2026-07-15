@@ -1,0 +1,32 @@
+created: 20251208233149550
+modified: 20260702124713786
+tags: 
+title: Webfont Tiddler Usage
+
+; CSS 
+
+```css
+/* 
+tags : $:/tags/Stylesheet 
+*/
+
+.tc-body {
+  font-family: "<font_name>";
+}
+```
+
+; HTML
+
+```html
+<div style="font-family: <font_name>">
+…
+</div>
+```
+
+; Wikitext
+
+```md
+@@font-family: <font_name>;
+… 
+@@
+```

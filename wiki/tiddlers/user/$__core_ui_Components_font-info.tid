@@ -1,0 +1,18 @@
+created: 20251209191210151
+modified: 20251209202054004
+title: $:/core/ui/Components/font-info
+
+<!-- 
+inspiration : $:/core/ui/Components/plugin-info 
+-->
+
+<$link to={{!!title}} class="tc-plugin-info">
+<div class="tc-plugin-info-chunk tc-plugin-info-description" style="text-align:center;">
+	<h1>
+		''<$text text={{{ [<currentTiddler>get[name]] ~[<currentTiddler>split[/]last[1]] }}}/>''
+	</h1>
+	<h2>
+		<$view field="title"/>
+	</h2>
+</div>
+</$link>

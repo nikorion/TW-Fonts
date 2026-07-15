@@ -1,0 +1,8 @@
+created: 20251209181448730
+modified: 20251209212145472
+title: Webfont Edition
+type: 
+
+\import $:/core/macros/font-edition
+
+<<font-table>>
