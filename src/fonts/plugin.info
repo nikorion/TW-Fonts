@@ -7,5 +7,6 @@
   "version": "0.1.0",
   "core-version": ">=5.2.0",
   "type": "application/json",
-  "plugin-type": "plugin"
+  "plugin-type": "plugin",
+  "list": "history"
 }
