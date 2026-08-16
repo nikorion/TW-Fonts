@@ -10,15 +10,18 @@
         "tiddlywiki/vanilla"
     ],
     "pluginPath": "../src",
+    "config": {
+      "retain-original-tiddler-path": true
+    },
     "build": {
         "plugin-json": [
             "--output", "dist",
-            "--savetiddler", "$:/plugins/nikorion/fonts", "TW-Fonts-Plugin.json", "application/json"
+            "--render", "$:/core/templates/exporters/JsonFile", "TW-Fonts-Plugin.json", "text/plain", "", "exportFilter", "[[$:/plugins/nikorion/fonts]]"
         ],
         "html": [
             "--output", "docs",
             "--rendertiddler", "$:/core/save/all", "TW-Fonts-Wiki.html", "text/plain", "",
-            "publishFilter", "-[[$:/dev/hmr]] -[[$:/config/dev/hmr-port]] -[[$:/config/SyncFilter]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
+            "publishFilter", "-[[$:/dev/hmr]] -[[$:/config/dev/hmr-port]] -[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
         ]
     }
 }
