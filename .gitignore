@@ -8,7 +8,7 @@ dist/
 wiki/tiddlers/$__StoryList*
 wiki/tiddlers/$__HistoryList*
 wiki/tiddlers/$__Import.tid
-wiki/tiddlers/$__dev-hmr-port.tid
+wiki/tiddlers/system/$__config_dev_hmr-port.tid
 
 # OS
 .DS_Store
