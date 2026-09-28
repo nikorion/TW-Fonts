@@ -3,7 +3,8 @@
     "plugins": [
         "tiddlywiki/filesystem",
         "tiddlywiki/tiddlyweb",
-        "nikorion/fonts"
+        "nikorion/fonts",
+        "nikorion/detect-language"
     ],
     "themes": [
         "tiddlywiki/snowwhite",
