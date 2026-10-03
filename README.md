@@ -1,5 +1,7 @@
 # TW-Fonts
 
+**English** · [Français](README.fr.md)
+
 ![Status](https://img.shields.io/badge/status-experimental-orange)
 ![TiddlyWiki](https://img.shields.io/badge/TiddlyWiki-%E2%89%A55.2.0-blue)
 
@@ -25,7 +27,7 @@ Each font is a `text/css` tiddler (`$:/fonts/<name>`) tagged `$:/tags/Stylesheet
 
 ```
 pnpm install
-pnpm dev      # TW dev server on :8080 (default; free port if busy) with content HMR over SSE
+pnpm dev      # dev wiki + hot reload; the URL (random free port) is printed on start
 pnpm build    # generates dist/TW-Fonts-Plugin.json + docs/TW-Fonts-Wiki.html
 ```
 
