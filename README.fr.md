@@ -7,38 +7,15 @@
 
 Un plugin TiddlyWiki qui regroupe une collection de polices web sous forme de tiddlers de feuille de style prêts à l'emploi.
 
----
-
-## Sommaire
-
-- [Présentation](#présentation)
-- [Installation](#installation)
-- [Développement](#développement)
-- [Fichiers](#fichiers)
-- [Historique des versions](#historique-des-versions)
-  - [v0.1.0](#v010)
-- [Crédits](#crédits)
-- [Licence](#licence)
-
----
-
 ## Présentation
 
 Chaque police est un tiddler `text/css` (`$:/fonts/<name>`) tagué `$:/tags/Stylesheet`, qui embarque la police sous forme de déclaration `@font-face` en base64. Il suffit de déposer le plugin pour que les polices soient disponibles dans tout le wiki — aucune requête externe, aucun fichier de police séparé à gérer.
-
-[↑](#sommaire "Retour au sommaire")
-
----
 
 ## Installation
 
 1. Télécharger `TW-Fonts-Plugin.json` depuis la [dernière version](https://github.com/nikorion/TW-Fonts/releases/latest)
 2. Le glisser-déposer dans votre TiddlyWiki (≥ 5.2.0)
 3. Enregistrer et recharger
-
-[↑](#sommaire "Retour au sommaire")
-
----
 
 ## Développement
 
@@ -50,10 +27,6 @@ pnpm build    # génère dist/TW-Fonts-Plugin.json + docs/TW-Fonts-Wiki.html
 
 Les sources sont dans `src/fonts/`.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Fichiers
 
 | Fichier | Rôle |
@@ -61,30 +34,16 @@ Les sources sont dans `src/fonts/`.
 | `src/fonts/plugin.info` | Métadonnées du plugin |
 | `src/fonts/$__fonts_*.css` | Un tiddler de feuille de style `@font-face` par police |
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Historique des versions
 
 ### v0.1.0
 
 Première version — collection de polices extraite dans son propre plugin.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Crédits
 
 Développé avec l'aide d'Anthropic Claude pour le code, la revue et la documentation.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Licence
 
 Licence MIT — voir `LICENSE`
-
-[↑](#sommaire "Retour au sommaire")
