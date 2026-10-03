@@ -36,7 +36,7 @@ Les sources sont dans `src/fonts/`.
 
 ## Historique des versions
 
-### v0.1.0
+**v0.1.0**
 
 Première version — collection de polices extraite dans son propre plugin.
 
