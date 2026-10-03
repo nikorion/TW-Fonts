@@ -26,7 +26,7 @@ Un plugin TiddlyWiki qui regroupe une collection de polices web sous forme de ti
 
 Chaque police est un tiddler `text/css` (`$:/fonts/<name>`) tagué `$:/tags/Stylesheet`, qui embarque la police sous forme de déclaration `@font-face` en base64. Il suffit de déposer le plugin pour que les polices soient disponibles dans tout le wiki — aucune requête externe, aucun fichier de police séparé à gérer.
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -36,7 +36,7 @@ Chaque police est un tiddler `text/css` (`$:/fonts/<name>`) tagué `$:/tags/Styl
 2. Le glisser-déposer dans votre TiddlyWiki (≥ 5.2.0)
 3. Enregistrer et recharger
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -50,7 +50,7 @@ pnpm build    # génère dist/TW-Fonts-Plugin.json + docs/TW-Fonts-Wiki.html
 
 Les sources sont dans `src/fonts/`.
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -61,7 +61,7 @@ Les sources sont dans `src/fonts/`.
 | `src/fonts/plugin.info` | Métadonnées du plugin |
 | `src/fonts/$__fonts_*.css` | Un tiddler de feuille de style `@font-face` par police |
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -71,7 +71,7 @@ Les sources sont dans `src/fonts/`.
 
 Première version — collection de polices extraite dans son propre plugin.
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -79,7 +79,7 @@ Première version — collection de polices extraite dans son propre plugin.
 
 Développé avec l'aide d'Anthropic Claude pour le code, la revue et la documentation.
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")
 
 ---
 
@@ -87,4 +87,4 @@ Développé avec l'aide d'Anthropic Claude pour le code, la revue et la document
 
 Licence MIT — voir `LICENSE`
 
-[↑ Retour au sommaire](#sommaire)
+[↑](#sommaire "Retour au sommaire")

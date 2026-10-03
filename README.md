@@ -26,7 +26,7 @@ A TiddlyWiki plugin bundling a collection of webfonts as ready-to-use stylesheet
 
 Each font is a `text/css` tiddler (`$:/fonts/<name>`) tagged `$:/tags/Stylesheet`, embedding the font as a base64 `@font-face` declaration. Drop the plugin in and the fonts become available wiki-wide — no external requests, no separate font files to manage.
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -36,7 +36,7 @@ Each font is a `text/css` tiddler (`$:/fonts/<name>`) tagged `$:/tags/Stylesheet
 2. Drag and drop it into your TiddlyWiki (≥ 5.2.0)
 3. Save and reload
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -50,7 +50,7 @@ pnpm build    # generates dist/TW-Fonts-Plugin.json + docs/TW-Fonts-Wiki.html
 
 Sources are in `src/fonts/`.
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -61,7 +61,7 @@ Sources are in `src/fonts/`.
 | `src/fonts/plugin.info` | Plugin metadata |
 | `src/fonts/$__fonts_*.css` | One `@font-face` stylesheet tiddler per font |
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -71,7 +71,7 @@ Sources are in `src/fonts/`.
 
 Initial release — font collection extracted into its own plugin.
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -79,7 +79,7 @@ Initial release — font collection extracted into its own plugin.
 
 Developed with assistance from Anthropic Claude for code, review, and documentation.
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
 
 ---
 
@@ -87,4 +87,4 @@ Developed with assistance from Anthropic Claude for code, review, and documentat
 
 MIT License — see `LICENSE`
 
-[↑ Back to contents](#contents)
+[↑](#contents "Back to contents")
