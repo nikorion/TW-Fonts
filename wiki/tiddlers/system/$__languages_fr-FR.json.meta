@@ -1,9 +1,0 @@
-author: xcazin
-core-version: >=5.0.0
-dependents: 
-description: Français (France)
-name: fr-FR
-plugin-type: language
-title: $:/languages/fr-FR
-type: application/json
-version: 5.3.8
