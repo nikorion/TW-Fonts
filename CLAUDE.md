@@ -19,12 +19,12 @@ wiki/                            ← wiki TW de développement
     system/plugins/               ← plugins tiers installés par glisser-déposé du .json (commander, shiraz, tweaks, utility, katex, codemirror-6, link-to-tabs, langue fr-FR, highlight.js) — tiddlers plugin normaux, non liés au plugin fonts lui-même
 
 dist/                            ← généré par pnpm build, gitignored
-docs/                            ← TW-Fonts-Wiki.html généré par pnpm build
+docs/                            ← démo générée par `pnpm build` (`index.html` + moteur externe), gitignorée, publiée par la CI
 ```
 
 ## Ce que fait le plugin
 Chaque police est un tiddler `text/css` titré `$:/fonts/<Nom>`, taggé `$:/tags/Stylesheet`, contenant une déclaration `@font-face` avec la police encodée en base64. Pour l'instant, le plugin ne contient **que** ces tiddlers de police — pas encore de widget de prévisualisation, de macro d'édition ni de documentation embarquée (ces tiddlers restent dans `wiki/tiddlers/user/` pour l'instant, hors du plugin).
 
 ## Spécificités dev
-- `pnpm build` → `dist/TW-Fonts-Plugin.json` + `docs/TW-Fonts-Wiki.html`. Build HTML `publishFilter` (`../guides/build-html-publishfilter.md`) : gardés `shiraz`/`tweaks`/`utility` (utiles en prod), `highlight`/`katex`/langue `fr-FR` (officiels TW).
+- `pnpm build` → `dist/TW-Fonts-Plugin.json` + démo `docs/` (publiée par la CI : `../guides/publication.md`). Démo `publishFilter` (`../guides/build-html-publishfilter.md`) : gardés `shiraz`/`tweaks`/`utility` (utiles en prod), `highlight`/`katex`/langue `fr-FR` (officiels TW).
 - HMR : les polices `.css` (corps = le `.css`, champs = le `.meta`) sont **hot-swappées à chaud** (un changement du `.meta` seul re-pousse aussi). Seul `plugin.info` déclenche un reboot.

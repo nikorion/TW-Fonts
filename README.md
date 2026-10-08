@@ -13,16 +13,23 @@ Each font is a `text/css` tiddler (`$:/fonts/<name>`) tagged `$:/tags/Stylesheet
 
 ## Installation
 
-1. Download `TW-Fonts-Plugin.json` from the [latest release](https://github.com/nikorion/TW-Fonts/releases/latest)
-2. Drag and drop it into your TiddlyWiki (≥ 5.2.0)
-3. Save and reload
+**Live demo**: [https://nikorion.github.io/TW-Fonts/](https://nikorion.github.io/TW-Fonts/) — try the plugin before installing it.
+
+**From the nikorion plugin library** (TiddlyWiki then offers each new version as an update):
+
+1. In your wiki, create a tiddler tagged `$:/tags/PluginLibrary`, with a field `url` set to `https://nikorion.github.io/tw-dev/library/index.html` and a `caption` such as `nikorion`.
+2. Open *Control Panel → Plugins → Get more plugins*, choose the nikorion library and install **Fonts**.
+
+**By hand**: download [`TW-Fonts-Plugin.json`](https://nikorion.github.io/TW-Fonts/TW-Fonts-Plugin.json) and drag it onto your wiki.
+
+Requires TiddlyWiki ≥ 5.2.0.
 
 ## Development
 
 ```
 pnpm install
 pnpm dev      # dev wiki + hot reload; the URL (random free port) is printed on start
-pnpm build    # generates dist/TW-Fonts-Plugin.json + docs/TW-Fonts-Wiki.html
+pnpm build    # dist/TW-Fonts-Plugin.json + docs/ (demo wiki, published by CI)
 ```
 
 Sources are in `src/fonts/`.

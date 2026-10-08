@@ -15,17 +15,54 @@
     ],
     "pluginPath": "../src",
     "config": {
-      "retain-original-tiddler-path": true
+        "retain-original-tiddler-path": true
     },
     "build": {
         "plugin-json": [
-            "--output", "dist",
-            "--render", "$:/core/templates/exporters/JsonFile", "TW-Fonts-Plugin.json", "text/plain", "", "exportFilter", "[[$:/plugins/nikorion/fonts]]"
+            "--output",
+            "dist",
+            "--render",
+            "$:/core/templates/exporters/JsonFile",
+            "TW-Fonts-Plugin.json",
+            "text/plain",
+            "",
+            "exportFilter",
+            "[[$:/plugins/nikorion/fonts]]"
         ],
-        "html": [
-            "--output", "docs",
-            "--rendertiddler", "$:/core/save/all", "TW-Fonts-Wiki.html", "text/plain", "",
-            "publishFilter", "-[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
+        "demo": [
+            "--output",
+            "docs",
+            "--render",
+            "$:/core/templates/exporters/JsonFile",
+            "TW-Fonts-Plugin.json",
+            "text/plain",
+            "",
+            "exportFilter",
+            "[[$:/plugins/nikorion/fonts]]",
+            "--savetiddlers",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "images",
+            "--setfield",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "_canonical_uri",
+            "$:/core/templates/canonical-uri-external-image",
+            "text/plain",
+            "--setfield",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "text",
+            "",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/save/offline-external-js",
+            "index.html",
+            "text/plain",
+            "",
+            "publishFilter",
+            "-[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]",
+            "--render",
+            "$:/core/templates/tiddlywiki5.js",
+            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+            "text/plain"
         ]
     }
 }
