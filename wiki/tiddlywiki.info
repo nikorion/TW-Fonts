@@ -25,7 +25,7 @@
         "html": [
             "--output", "docs",
             "--rendertiddler", "$:/core/save/all", "TW-Fonts-Wiki.html", "text/plain", "",
-            "publishFilter", "-[[$:/dev/hmr]] -[[$:/config/dev/hmr-port]] -[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
+            "publishFilter", "-[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]"
         ]
     }
 }

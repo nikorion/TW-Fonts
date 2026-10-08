@@ -15,7 +15,7 @@ wiki/                            ← wiki TW de développement
   tiddlywiki.info                ← plugins actifs (filesystem, tiddlyweb, nikorion/fonts), pluginPath: ../src, build plugin-json + html
   tiddlers/
     $__StoryList.tid (non versionné)
-    system/$__dev-hmr.tid + system/$__config_SyncFilter.tid
+    system/$__config_SyncFilter.tid
     system/plugins/               ← plugins tiers installés par glisser-déposé du .json (commander, shiraz, tweaks, utility, katex, codemirror-6, link-to-tabs, langue fr-FR, highlight.js) — tiddlers plugin normaux, non liés au plugin fonts lui-même
 
 dist/                            ← généré par pnpm build, gitignored
@@ -27,4 +27,4 @@ Chaque police est un tiddler `text/css` titré `$:/fonts/<Nom>`, taggé `$:/tags
 
 ## Spécificités dev
 - `pnpm build` → `dist/TW-Fonts-Plugin.json` + `docs/TW-Fonts-Wiki.html`. Build HTML `publishFilter` (`../guides/build-html-publishfilter.md`) : gardés `shiraz`/`tweaks`/`utility` (utiles en prod), `highlight`/`katex`/langue `fr-FR` (officiels TW).
-- HMR : les polices `.css` (corps = le `.css`, champs = le `.meta`) sont **hot-swappées à chaud** (un changement du `.meta` seul re-pousse aussi). Seul `plugin.info` déclenche un reboot — `nodemon.json` ne surveille que lui (ext `info`).
+- HMR : les polices `.css` (corps = le `.css`, champs = le `.meta`) sont **hot-swappées à chaud** (un changement du `.meta` seul re-pousse aussi). Seul `plugin.info` déclenche un reboot.
