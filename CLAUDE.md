@@ -12,7 +12,7 @@ src/fonts/                       ← sources du plugin (seul dossier à toucher)
   plugin.info                    ← métadonnées du plugin (v0.1.0)
 
 wiki/                            ← wiki TW de développement
-  tiddlywiki.info                ← plugins actifs (filesystem, tiddlyweb, nikorion/fonts), pluginPath: ../src, build plugin-json + html
+  tiddlywiki.info                ← plugins actifs (filesystem, tiddlyweb, nikorion/fonts), build plugin-json + html
   tiddlers/
     $__StoryList.tid (non versionné)
     system/$__config_SyncFilter.tid
