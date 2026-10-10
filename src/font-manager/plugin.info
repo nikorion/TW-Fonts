@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/nikorion/font-manager",
+  "name": "Font Manager",
+  "description": "Drop font files onto a TiddlyWiki: they become self-contained stylesheet tiddlers",
+  "author": "nikorion",
+  "source": "https://github.com/nikorion/TW-Font-Manager",
+  "version": "0.3.0",
+  "core-version": ">=5.2.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "list": "readme license history"
+}

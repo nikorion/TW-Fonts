@@ -1,12 +1,15 @@
 created: 20251209021726203
-modified: 20251210124603271
+creator: nikorion
+modified: 20261010171902107
+modifier: nikorion
 show-fantasy: 0
-show-mono: 0
+show-mono: 1
 show-sans: 0
 show-script: 0
-show-serif: 1
+show-serif: 0
 tags: 
 title: Webfont Preview
+type: text/vnd.tiddlywiki
 
 \import $:/core/macros/font-preview
 

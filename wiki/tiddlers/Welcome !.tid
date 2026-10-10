@@ -1,12 +1,26 @@
 created: 20251208231702210
-modified: 20251209212130039
+creator: nikorion
+modified: 20261010190000000
+modifier: nikorion
 title: Welcome !
-type: 
+type: text/vnd.tiddlywiki
 
-#[[Webfont Tiddler]]
-#[[Webfont Tiddler Usage]]
-#[[Locally Available Webfonts]]
-#[[Webfont Preview]]
-#[[Webfont Edition]]
+\whitespace trim
 
-,,[[Internal Customization]],,
+<<detect-language-lingo "FontsDemo/Intro">>
+
+<<detect-language-lingo "FontsDemo/TryHeading" mode="block">>
+
+<<detect-language-lingo "FontsDemo/TryBody">>
+
+<<detect-language-lingo "FontsDemo/SizeNote">>
+
+<<detect-language-lingo "FontsDemo/UsageHeading" mode="block">>
+
+<<detect-language-lingo "FontsDemo/UsageBody">>
+
+<<detect-language-lingo "FontsDemo/LibraryHeading" mode="block">>
+
+<<detect-language-lingo "FontsDemo/LibraryBody">>
+
+[[Webfont Preview]]

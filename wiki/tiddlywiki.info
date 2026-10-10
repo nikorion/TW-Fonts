@@ -1,9 +1,14 @@
 {
-    "description": "TW-Fonts development wiki",
+    "description": "TW-Font-Manager development wiki",
     "plugins": [
         "tiddlywiki/filesystem",
         "tiddlywiki/tiddlyweb",
-        "nikorion/fonts",
+        "nikorion/font-manager",
+        "tiddlywiki/highlight",
+        "tiddlywiki/katex",
+        "nikorion/plugin-info-tree",
+        "nikorion/scroll-layout",
+        "nikorion/math",
         "nikorion/detect-language"
     ],
     "themes": [
@@ -22,22 +27,22 @@
             "dist",
             "--render",
             "$:/core/templates/exporters/JsonFile",
-            "TW-Fonts-Plugin.json",
+            "TW-Font-Manager-Plugin.json",
             "text/plain",
             "",
             "exportFilter",
-            "[[$:/plugins/nikorion/fonts]]"
+            "[[$:/plugins/nikorion/font-manager]]"
         ],
         "demo": [
             "--output",
             "docs",
             "--render",
             "$:/core/templates/exporters/JsonFile",
-            "TW-Fonts-Plugin.json",
+            "TW-Font-Manager-Plugin.json",
             "text/plain",
             "",
             "exportFilter",
-            "[[$:/plugins/nikorion/fonts]]",
+            "[[$:/plugins/nikorion/font-manager]]",
             "--savetiddlers",
             "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
             "images",
